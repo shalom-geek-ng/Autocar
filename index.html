@@ -9,44 +9,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <title>Document</title>
-<nav class="navbar navbar-expand-lg fixed-top bg-light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>AutoCars</title>
+<nav class="navbar navbar-expand-lg fixed-top " style="box-shadow: -1px 3px 10px -5px rgba(48,47,47,0.66);
+-webkit-box-shadow: -1px 3px 10px -5px rgba(48,47,47,0.66);
+-moz-box-shadow: -1px 3px 10px -5px rgba(48,47,47,0.66); background-color: white; padding: 15px 0px;">
   <div class="container">
     <a class="navbar-brand navheading" href="#">Auto<span style="color: red;">Cars</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"><a class="navbar-brand navheading" href="#">Auto<span style="color: red;">Cars</span></a></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Cars</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">Cars</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Services</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">News</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Buy</a>
+          <a class="nav-link nav-list active" aria-current="page" href="#">Buy</a>
         </li>
         
       </ul>
+    </div>
+  </div>
     </div>
   </div>
 </nav>
 </head>
 <body>
 
+
+  <!-- Carousel start -->
+  <div id="carouselExampleFade"  class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/Static/img/Tesla.jpg" style="width: 100%; height: 100vh;  object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/Static/img/bugatti.jpg" style="width: 100%; height: 100vh;  object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/Static/img/ferrari.jpg" style="width: 100%; height: 100vh;  object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/Static/img/mercedes.jpg" style="width: 100%; height: 100vh;  object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel End -->
     <script src="Static/Js/script.js"></script>
     <script src="Static/Js/bootstrap.bundle.min.js"></script>
     

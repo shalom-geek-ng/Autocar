@@ -7,8 +7,17 @@
 }
 :root{
     --navheading: 'Roboto Mono', monospace;
+    --navlist: 'Roboto Condensed', sans-serif;
 }
 .navheading{
     font-family: var(--navheading);
     font-size: 23px;
 }
+.nav-list{
+    font-family: var(--navlist);
+    font-size: 18px;
+}
+nav ul li{
+    margin: 0px 15px;
+}
+
